@@ -1,0 +1,16 @@
+.form-search {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+}
+
+.clear {
+  margin: 10px 0px;
+  color: #2d16af;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.clear:hover {
+  color: #0e005f;
+}
