@@ -1,10 +1,10 @@
 .card {
-  width: 230px;
+  display: flex;
+  width: 230px; 
   border: 1px solid #eeeeee;
   border-radius: 10px;
   overflow: hidden;
   transition: box-shadow 0.2s ease-in-out;
-  
 }
 
 .card:hover {
@@ -19,20 +19,24 @@
   width: 100%;
   aspect-ratio: 1 / 1;
   overflow: hidden;
-  
 }
 
 .card__image > img {
   width: 100%;
+  aspect-ratio: 1 / 1;
   object-fit: cover;
+  transform: scale(1.1);
+  transition: transform 0.2s ease-in-out;
 }
+
+
 
 .card__data {
   padding: 12px;
 }
 
 .card__content {
-  height: 67px;
+  height: 70px;
 }
 
 .card__title {
@@ -43,10 +47,11 @@
 .card__artist {
   color: var(--gray);
   margin-top: 4px;
+  font-size: 10px;
 }
 
 .card .card__action {
-  margin-top: 12px;
-  display: flex;
+  margin: 12px 10px;
+  display: block;
   justify-content: flex-end;
 }

@@ -17,16 +17,19 @@ function Track({ imageUrl, title, artist, toggleSelect }) {
         <img src={imageUrl} alt={title} />
       </div>
 
-      <div className="card__data">
-        <div className="card__content">
-          <h3 className="card__title">{title}</h3>
-          <p className="card__artist">{artist}</p>
+      <div >
+        <div className="card__data">
+          <div className="card__content">
+            <h3 className="card__title">{title}</h3>
+            <p className="card__artist">{artist}</p>
+          </div>
         </div>
 
         <div className="card__action">
           <Button variant={isSelected ? 'primary' : 'secondary'} onClick={handleToggleSelect}>{isSelected ? 'Deselect' : 'Select'}</Button>
         </div>
       </div>
+
     </div>
   );
 }

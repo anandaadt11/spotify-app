@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import Track from '../../components/Track';
 import SearchBar from '../../components/SearchBar';
 import { Form } from '../../components/Form';
-import Auth from '../auth'
+import Auth from '../auth/index.js'
 import {
     BrowserRouter as Router,
     Switch,
