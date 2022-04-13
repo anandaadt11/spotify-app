@@ -10,6 +10,7 @@ import {
     Link,
     BrowserRouter
 } from "react-router-dom";
+import Navbar from '../../components/Navbar';
 
 
 function Home() {
@@ -72,8 +73,8 @@ function Home() {
             <Auth />
 
             {isAuthorize && (
-                <main className="container" id="home">
-
+                <main id="home" >
+                    <Navbar />
 
                     <Form
                         accessToken={accessToken}
@@ -89,7 +90,7 @@ function Home() {
                         onClearSearch={clearSearch}
                     />
 
-                    <div className="content">
+                    <div className="container">
                         {tracks.length === 0 && (
                             <p>No tracks</p>
                         )}

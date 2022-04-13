@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react';
-import './index.css';
+
 import Button from '../Button';
 import config from '../../lib/config';
 
@@ -47,11 +47,11 @@ const Form = ({ accessToken, onSuccess }) => {
 
 
     return (
-        <div className="form">
-            <h2>Form</h2>
+        <div className="container">
+            <h2>Create Playlist</h2>
             <form onSubmit={handleSubmit}>
-                <div className='tittle'>
-                    <label htmlFor="tittle">Tittle : </label>
+                <div className='mb-3'>
+                    <label htmlFor="tittle" className='form-label'>Tittle : </label>
                     <input
                         id="tittle"
                         type="text"
@@ -59,22 +59,24 @@ const Form = ({ accessToken, onSuccess }) => {
                         value={tittle}
                         onChange={handleTittle}
                         required
+                        className='form-control'
                     />
                 </div>
 
-                <div className='desc'>
-                    <label htmlFor="desc">Description : </label>
-                    <input
+                <div style={{ margin: '0px 0px 20px 0px' }}>
+                    <label htmlFor="desc" className='form-label'>Description : </label>
+                    <textarea
                         id="desc"
                         type="text"
                         name="desc"
                         value={desc}
                         onChange={handleDesc}
                         required
+                        className='form-control'
                     />
                 </div>
 
-                <Button type="submit">Search</Button>
+                <Button type="submit" >Search</Button>
             </form>
         </div>
     );

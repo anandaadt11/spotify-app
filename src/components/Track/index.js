@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import './index.css';
+
+
 
 import Button from '../Button';
 
@@ -12,25 +13,27 @@ function Track({ imageUrl, title, artist, toggleSelect }) {
   }
 
   return (
-    <div className="card">
-      <div className="card__image">
-        <img src={imageUrl} alt={title} />
-      </div>
+    <div>
 
-      <div >
-        <div className="card__data">
-          <div className="card__content">
-            <h3 className="card__title">{title}</h3>
-            <p className="card__artist">{artist}</p>
+
+      <div class="card mb-3" style={{ width: '250px' }}>
+        <div class="row g-0">
+          <div class="col-md-4" >
+            <img src={imageUrl} alt={title} class="img-fluid rounded-start" />
+          </div>
+          <div class="col-md-8" >
+            <div class="card-body">
+              <h5 class="card-title">{title}</h5>
+              <p class="card-text" style={{ margin: '0px 0px 20px 0px' }}>{artist}</p>
+              <Button variant={isSelected ? 'primary' : 'secondary'} onClick={handleToggleSelect}>{isSelected ? 'Deselect' : 'Select'}</Button>
+            </div>
           </div>
         </div>
-
-        <div className="card__action">
-          <Button variant={isSelected ? 'primary' : 'secondary'} onClick={handleToggleSelect}>{isSelected ? 'Deselect' : 'Select'}</Button>
-        </div>
       </div>
 
-    </div>
+
+    </div >
+
   );
 }
 

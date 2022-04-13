@@ -40,8 +40,11 @@ function SearchBar({ accessToken, onSuccess, onClearSearch }) {
   }
 
   return (
-    <div>
-      <form className="form-search" onSubmit={handleSubmit}>
+    <div className='container'>
+      <hr></hr>
+      <h2>Search Song</h2>
+
+      <form className="form-search" style={{ margin: '20px 0px' }} onSubmit={handleSubmit}>
         <input
           type="text"
           placeholder="Search..."
