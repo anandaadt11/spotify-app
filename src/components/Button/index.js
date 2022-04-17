@@ -1,8 +1,10 @@
-import React from 'react'
+
+
 import './index.css'
 
+// type Bbutton = { children:String, type:any, variant:String, className:string, onClick:any, href:any }
 
-function Button({ children, type, variant, className, onClick, href }) {
+const Button = ({ children, type, variant, className, onClick, href }) => {
   const classButton = ['btn']
 
 

@@ -3,7 +3,7 @@ import config from '../../lib/config';
 import Button from '../Button';
 import './index.css';
 
-function SearchBar({ accessToken, onSuccess, onClearSearch }) {
+const SearchBar = ({ accessToken, onSuccess, onClearSearch }) => {
   const [text, setText] = useState('');
   const [isClear, setIsClear] = useState(true);
 

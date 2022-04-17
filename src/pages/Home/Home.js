@@ -4,10 +4,6 @@ import SearchBar from '../../components/SearchBar';
 import { Form } from '../../components/Form';
 import Auth from '../auth/index.js'
 import {
-    BrowserRouter as Router,
-    Switch,
-    Route,
-    Link,
     BrowserRouter
 } from "react-router-dom";
 import Navbar from '../../components/Navbar';
