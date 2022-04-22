@@ -15,12 +15,15 @@ function Auth() {
         const state = Date.now().toString();
         const clientId = process.env.REACT_APP_SPOTIFY_CLIENT_ID;
 
+
         return 'https://accounts.spotify.com/authorize?' +
             `client_id=${clientId}` +
             '&response_type=token' +
             `&redirect_uri=${config.HOST}` +
             `&state=${state}` +
             `&scope=${config.SPOTIFY_SCOPE}`;
+
+
     }
 
     return (
