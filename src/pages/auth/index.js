@@ -1,6 +1,6 @@
 import Button from '../../components/Button';
 import React, { useEffect, useState } from 'react'
-import config from '../../lib/config.ts';
+import config from '../../lib/config.js';
 
 function Auth() {
     const [accessToken, setAccessToken] = useState('');

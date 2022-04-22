@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import config from '../../lib/config.ts';
+import config from '../../lib/config.js';
 import Button from '../Button';
 import './index.css';
 
