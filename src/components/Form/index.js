@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 
 import Button from '../Button';
-import config from '../../lib/config';
+import config from '../../lib/config.ts';
 
 // const { useState } = require("react");
 

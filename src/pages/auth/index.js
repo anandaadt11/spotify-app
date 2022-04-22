@@ -1,6 +1,6 @@
 import Button from '../../components/Button';
 import React, { useEffect, useState } from 'react'
-import config from '../../lib/config';
+import config from '../../lib/config.ts';
 
 function Auth() {
     const [accessToken, setAccessToken] = useState('');
@@ -22,7 +22,6 @@ function Auth() {
             `&redirect_uri=${config.HOST}` +
             `&state=${state}` +
             `&scope=${config.SPOTIFY_SCOPE}`;
-
 
     }
 
